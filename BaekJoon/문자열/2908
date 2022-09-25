@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String a = scanner.next();
+		String b = scanner.next();
+		int[] arr = new int[3];
+		int[] brr = new int[3];
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=Integer.parseInt(a.substring(i,i+1));
+			brr[i]=Integer.parseInt(b.substring(i,i+1));
+		}
+		int sum = arr[0]+arr[1]*10+arr[2]*100;
+		int sum2= brr[0]+brr[1]*10+brr[2]*100;
+		if(sum<sum2)
+		{
+			System.out.println(sum2);
+		}
+		else if(sum>sum2)
+		{
+			System.out.println(sum);
+		}
+	}
+}
