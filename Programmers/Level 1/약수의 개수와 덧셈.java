@@ -1,3 +1,4 @@
+다시 푼 코드와 같음.
 class Solution {
     public int solution(int left, int right) {
         int answer = 0;
