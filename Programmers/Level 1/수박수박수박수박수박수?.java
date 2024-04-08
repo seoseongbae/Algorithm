@@ -1,3 +1,5 @@
+--------------------------------------
+다시 푼 코드도 같음.
 class Solution {
     public String solution(int n) {
         String answer = "";
