@@ -17,3 +17,21 @@ class Solution {
         return answer;
     }
 }
+----------------------------------------------------------------
+import java.util.*;
+class Solution {
+    public String[] solution(String[] strings, int n) {
+        String[] answer = new String[strings.length];
+    
+        Arrays.sort(strings);
+        int count=0;
+        for(char c='a';c<='z';c++){
+            for(int j=0;j<strings.length;j++){
+                if(strings[j].charAt(n)==c){
+                    answer[count++]=strings[j];
+                }
+            }
+        }
+        return answer;
+    }
+}
