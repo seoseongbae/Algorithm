@@ -5,7 +5,7 @@ class Solution {
         int count[] = new int[201];
         
         for(int i=0;i<lines.length;i++){
-            int start = lines[i][0]+100; //음수를 해결하기위해 +100을 하여 범위를 0부터 200으로 처리
+            int start = lines[i][0]+100; //음수를 해결하기위해 +100을 하여 범위를 0부터 200으로 처리 한다
             int end = lines[i][1]+100;
             
             for(int j=start;j<end;j++){
