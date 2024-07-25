@@ -18,6 +18,7 @@ public class Main {
 		list.add("white");
 		int a=list.indexOf(sc.next())*10;
 		int b=list.indexOf(sc.next());
+		
 		long c=list.indexOf(sc.next());
 		System.out.println((a+b)*(long)Math.pow(10, c));
 	}
