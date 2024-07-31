@@ -14,7 +14,6 @@ class Solution {
             {
                 county++;
             }
-        
         }
         if(countp==county)
         {
