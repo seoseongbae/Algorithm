@@ -10,7 +10,6 @@ class Solution
         {
             answer+=A[i]*B[B.length-1-i];
         }
-        
         return answer;
     }
 }
