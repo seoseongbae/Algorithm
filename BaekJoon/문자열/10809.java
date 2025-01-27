@@ -28,3 +28,27 @@ public class Main {
 		}
 	}
 }
+
+-------------------------------------
+다시푼 문제
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int [26];
+		Arrays.fill(arr, -1); //배열을 -1로 초기화
+		String s = sc.nextLine();
+		for (int i = 0; i < s.length(); i++) {
+			int num = s.charAt(i) - 97;
+			if (arr[num] == -1) {
+				arr[num] = i;
+			}
+		}
+		for(int val : arr) {	// 배열 출력
+			System.out.print(val + " ");
+		}
+	}
+}
