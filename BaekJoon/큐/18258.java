@@ -71,3 +71,58 @@ public class Main {
 	System.out.println(sb);
 	}
 }
+------------------------------------------------------------------------
+#다시풀어본문제
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num = Integer.parseInt(br.readLine());
+		
+		Deque<Integer> que = new LinkedList<Integer>();
+		StringBuilder sb = new StringBuilder();
+		for (int i=0;i<num;i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			switch (st.nextToken()) {
+			case "push":
+				que.offer(Integer.parseInt(st.nextToken()));
+				break;
+			case "pop":
+				int val1 = -1;
+				if(!que.isEmpty()) {
+					val1 = que.poll();
+				}
+				sb.append(val1 + "\n");
+				break;
+			case "size":
+				sb.append(que.size()+"\n");
+				break;
+			case "empty":
+				int val2=1;
+				if(!que.isEmpty()) {
+					val2 = 0;
+				}
+				sb.append(val2 + "\n");
+				break;
+			case "front":
+				int val3= -1;
+				if(!que.isEmpty()) {
+					val3  = que.peek();
+				}
+				sb.append(val3 + "\n");
+				break;
+			case "back":
+				int val4 = -1;
+				if(!que.isEmpty()) {
+					val4 = que.getLast();
+				}
+				sb.append(val4 + "\n");
+				break;
+			}
+		}
+		System.out.println(sb.toString());
+	}	
+}
