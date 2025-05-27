@@ -40,7 +40,7 @@ public class Main {
 		for(int i=0;i<stack.size();i++) {
 			int val = stack.pop();
 			if(val == ans) {
-				ans++;;
+				ans++;
 			} else {
 				return "Sad";
 			}
